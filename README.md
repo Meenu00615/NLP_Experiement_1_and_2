@@ -61,4 +61,5 @@ The impact of transformer models on research, industry, and society is discussed
 Summary of key findings and transformative impact of transformer models on deep learning and AI. Emphasis on continued evolution and refinement of transformer architectures.
 
 ## References
-The conclusion summarizes the key findings of the review and underscores the transformative impact of transformer models on deep learning and AI. It emphasizes the continued evolution and refinement of transformer architectures to address emerging challenges and opportunities in the field.
+-https://blogs.nvidia.com/blog/what-is-a-transformer-model/
+-https://www.ibm.com/topics/transformer-model
