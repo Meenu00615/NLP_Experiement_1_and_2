@@ -12,41 +12,53 @@ Delves into the architecture of transformer models, elucidating the two fundamen
 ## Input Embeddings
 -	The process begins with the transformation of input data, which could be sequences of tokens (such as words or subword pieces) or other structured data, into numerical representations called embeddings.
 -	These embeddings capture the semantic meaning of the tokens in the input sequence. For sequences of words, embeddings can be learned during training or obtained from pre-trained word embeddings like Word2Vec or GloVe.
-•	The input embeddings serve as the initial representations of the input data and are fed into the transformer model for further processing.
+-	The input embeddings serve as the initial representations of the input data and are fed into the transformer model for further processing.
 
 
 ## Positional Encoding
-Incorporates positional encoding to provide information about the position of each token in the input sequence. Introduction of additional values or vectors encoding position information. Addition of positional encodings to token embeddings before feeding them into the transformer model.
+-	Transformer models incorporate positional encoding to provide information about the position of each token in the input sequence.
+-	Since transformers do not inherently understand the sequential order of tokens, positional encoding introduces additional values or vectors that encode the position information.
+-	These positional encodings are typically added to the token embeddings before feeding them into the transformer model, allowing the model to consider the sequence's sequential information.
+
 
 ## Multi-Head Attention
-Core component enabling capture of relationships between different tokens in the input sequence. Transformation of input embeddings through multiple attention heads. Calculation of attention weights using softmax functions to determine token importance.
+-	Multi-head attention is a core component of transformer models that enables them to capture relationships between different tokens in the input sequence.
+-	In multi-head attention, the input embeddings, along with their positional encodings, are transformed through multiple attention heads, each focusing on different aspects of the input sequence.
+-	Softmax functions are used to calculate attention weights, which determine the importance of each token with respect to every other token in the sequence.
+-	By attending to different parts of the input sequence in parallel, multi-head attention allows the model to capture complex relationships and dependencies within the data.
+
 
 ## Layer Normalization and Residual Connections
-Utilization of layer normalization and residual connections to stabilize and speed up training. Ensuring consistent distribution of values within each layer. Retention of information from previous layers to mitigate the vanishing gradient problem.
+-	Transformer models utilize layer normalization and residual connections to stabilize and speed up the training process.
+-	Layer normalization ensures that the distribution of values within each layer remains consistent throughout the training process, preventing the model from becoming overly sensitive to small changes in input.
+-	Residual connections, inspired by the concept of skip connections in residual networks, allow the model to retain information from previous layers and mitigate the vanishing gradient problem.
+
 
 ## Feedforward Neural Networks
-Passage of output through feedforward neural networks for non-linear transformations. Application of element-wise operations, activation functions (commonly ReLU), and linear transformations.
+-	The output of the multi-head attention layer is passed through feedforward neural networks, which apply non-linear transformations to the token representations.
+-	These feedforward networks enable the model to capture complex patterns and relationships in the data by performing element-wise operations followed by activation functions (commonly ReLU) and linear transformations
+
 
 ## Stacked Layers
-Inclusion of multiple layers stacked on top of each other. Gradual refinement of input data representations through each layer. Capture of hierarchical and abstract features in the data.
+Transformer models typically consist of multiple layers stacked on top of each other. Each layer processes the output of the previous layer, gradually refining the representations of the input data. Stacking multiple layers allows the model to capture hierarchical and abstract features in the data, leading to more robust and expressive representations.
 
 ## Output Layer
-Addition of a separate decoder module in sequence-to-sequence tasks like neural machine translation. Production of final predictions or representations for the given task.
+In sequence-to-sequence tasks such as neural machine translation, a separate decoder module may be added on top of the encoder to generate the output sequence. The output layer of the transformer model produces the final predictions or representations for the given task.
 
 ## Training and Inference
-Training via supervised learning to minimize loss function. Utilization of optimization techniques like Adam or stochastic gradient descent (SGD). Inference through passing input sequences through pre-trained models for prediction or representation generation.
+Transformer models are trained using supervised learning, where they learn to minimize a loss function that quantifies the difference between the model's predictions and the ground truth for the given task. Training typically involves optimization techniques like Adam or stochastic gradient descent (SGD). After training, the model can be used for inference on new data. During inference, the input sequence is passed through the pre-trained model, and the model generates predictions or representations for the given task.
 
 ## Functionality
-Step-by-step breakdown of transformer model operation, from input embeddings to stacked layers. Insights into inner workings of transformer models.
+Here, the functionality of transformer models is elucidated through a step-by-step breakdown of their operation. From input embeddings to multi-head attention mechanisms, layer normalization, and stacked layers, this section provides insights into the inner workings of transformer models.
 
 ## Applications
-Exploration of diverse range of tasks to which transformer models have been applied. Demonstrated versatility and efficacy across various domains such as language translation, sentiment analysis, drug discovery, and anomaly detection.
+The applications section explores the diverse range of tasks to which transformer models have been applied. From language translation and sentiment analysis to drug discovery and anomaly detection, transformer models have demonstrated remarkable versatility and efficacy across various domains.
 
 ## Impact and Future Directions
-Discussion of transformer models' impact on research, industry, and society. Examination of future directions and potential areas of exploration in transformer research.
+The impact of transformer models on research, industry, and society is discussed in this section. It examines how transformer models have reshaped the landscape of AI and machine learning, paving the way for unprecedented advancements. Additionally, future directions and potential areas of exploration in transformer research are explored.
 
 ## Conclusion
 Summary of key findings and transformative impact of transformer models on deep learning and AI. Emphasis on continued evolution and refinement of transformer architectures.
 
 ## References
-Comprehensive list of references, including seminal papers, research articles, and relevant literature, for further exploration.
+The conclusion summarizes the key findings of the review and underscores the transformative impact of transformer models on deep learning and AI. It emphasizes the continued evolution and refinement of transformer architectures to address emerging challenges and opportunities in the field.
