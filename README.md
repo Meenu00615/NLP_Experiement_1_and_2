@@ -10,7 +10,10 @@ Provides a brief overview of transformer models' significance in modern AI and m
 Delves into the architecture of transformer models, elucidating the two fundamental innovations: positional encoding and self-attention mechanism. Explores how these innovations enable transformers to process input sequences efficiently and capture intricate relationships within the data.
 
 ## Input Embeddings
-Transformation of input data into numerical representations called embeddings. Capturing semantic meaning of tokens in the input sequence. Utilization of learned embeddings or pre-trained word embeddings like Word2Vec or GloVe.
+•	The process begins with the transformation of input data, which could be sequences of tokens (such as words or subword pieces) or other structured data, into numerical representations called embeddings.
+•	These embeddings capture the semantic meaning of the tokens in the input sequence. For sequences of words, embeddings can be learned during training or obtained from pre-trained word embeddings like Word2Vec or GloVe.
+•	The input embeddings serve as the initial representations of the input data and are fed into the transformer model for further processing.
+
 
 ## Positional Encoding
 Incorporates positional encoding to provide information about the position of each token in the input sequence. Introduction of additional values or vectors encoding position information. Addition of positional encodings to token embeddings before feeding them into the transformer model.
